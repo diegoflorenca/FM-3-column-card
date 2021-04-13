@@ -26,8 +26,10 @@ body {
   font-family: var(--ff-text);
   font-size: var(--f-size);
   color: var(--c-text);
-  display: grid;
-  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cards {
@@ -101,5 +103,26 @@ body {
       color: var(--c-text);
       background-color: var(--c-luxury);
     }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  color: hsl(0, 0%, 0%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 775px) {
+  body {
+    height: auto;
+    padding: 1.5rem;
+  }
+  .cards {
+    max-width: 375px;
+    flex-direction: column;
   }
 }

@@ -27,9 +27,19 @@ body {
   font-family: var(--ff-text);
   font-size: var(--f-size);
   color: var(--c-text);
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cards {
@@ -115,5 +125,30 @@ body {
 .cards .luxury a:hover {
   color: var(--c-text);
   background-color: var(--c-luxury);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 1rem;
+  color: black;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media only screen and (max-width: 775px) {
+  body {
+    height: auto;
+    padding: 1.5rem;
+  }
+  .cards {
+    max-width: 375px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
