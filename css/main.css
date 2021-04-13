@@ -1,0 +1,119 @@
+:root {
+  --f-size: 15px;
+  --ff-heading: 'Big Shoulders Display', cursive;
+  --ff-text: 'Lexend Deca', sans-serif;
+  --c-body: hsl(0, 0%, 95%, 100%);
+  --c-text: hsla(0, 0%, 100%, 0.75);
+  --c-detail: hsl(0, 0%, 95%);
+  --c-sedans: hsl(31, 77%, 52%);
+  --c-suvs: hsl(184, 100%, 22%);
+  --c-luxury: hsl(179, 100%, 13%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--c-body);
+  font-family: var(--ff-text);
+  font-size: var(--f-size);
+  color: var(--c-text);
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+}
+
+.cards {
+  max-width: 920px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards .card {
+  padding: 3rem;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.cards .card h2 {
+  font-family: var(--ff-heading);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.cards .card p {
+  line-height: 1.8rem;
+  padding-bottom: 3rem;
+}
+
+.cards .card a {
+  padding: 0.8rem 1.6rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  background-color: var(--c-detail);
+  border: 1px solid var(--c-detail);
+}
+
+.cards .sedans {
+  background-color: var(--c-sedans);
+}
+
+.cards .sedans a {
+  color: var(--c-sedans);
+}
+
+.cards .sedans a:hover {
+  color: var(--c-text);
+  background-color: var(--c-sedans);
+}
+
+.cards .suvs {
+  background-color: var(--c-suvs);
+}
+
+.cards .suvs a {
+  color: var(--c-suvs);
+}
+
+.cards .suvs a:hover {
+  color: var(--c-text);
+  background-color: var(--c-suvs);
+}
+
+.cards .luxury {
+  background-color: var(--c-luxury);
+}
+
+.cards .luxury a {
+  color: var(--c-luxury);
+}
+
+.cards .luxury a:hover {
+  color: var(--c-text);
+  background-color: var(--c-luxury);
+}
+/*# sourceMappingURL=main.css.map */
